@@ -2,11 +2,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${vcap.services.eureka-service.credentials.uri:http://connoj14-titan-eureka.apps.titan.lab.emc.com}/eureka/
-
----
-spring:
-  profiles: cloud
-eureka:
-  instance:
-    hostname: ${APPLICATION_DOMAIN}
-    nonSecurePort: 80
+      registerWithEureka: true
